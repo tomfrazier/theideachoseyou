@@ -931,8 +931,8 @@ nav {
   background: var(--ink-soft);
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
+  align-items: center;
+  gap: 28px;
   position: relative;
 }
 
@@ -944,35 +944,47 @@ nav {
   background: var(--amber);
 }
 
-.price-display {
+.back-cover-book {
   display: flex;
-  gap: 24px;
-  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
 }
 
-.price-format {
+.back-cover-book .book-cover {
+  width: 240px;
+  height: 315px;
+  padding: 30px 28px 28px;
+  box-shadow:
+    -12px 12px 44px rgba(0,0,0,0.65),
+    -4px 4px 16px rgba(0,0,0,0.45),
+    2px 0 0 rgba(255,255,255,0.03) inset,
+    -2px 0 0 rgba(0,0,0,0.4) inset;
+}
+
+.back-cover-book .book-series-tag {
+  font-size: 0.48rem;
+  margin-bottom: 18px;
+}
+
+.back-cover-book .book-cover-rule {
+  margin-bottom: 16px;
+}
+
+.back-cover-book .book-cover-title {
+  font-size: 1.8rem;
+}
+
+.back-cover-book .book-cover-title .chose {
+  font-size: 2.1rem;
+}
+
+.back-cover-book .book-cover-subtitle {
+  font-size: 0.5rem;
+  margin-bottom: 18px;
+}
+
+.back-cover-book .book-cover-author {
   font-size: 0.62rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--muted);
-  font-weight: 700;
-  margin-bottom: 4px;
-}
-
-.price-amount {
-  font-size: 2rem;
-  font-weight: 900;
-  color: var(--gold);
-  line-height: 1;
-  letter-spacing: -0.02em;
-}
-
-.cta-tagline {
-  font-size: 0.8rem;
-  line-height: 1.6;
-  color: var(--muted);
-  font-style: italic;
-  font-family: 'EB Garamond', serif;
 }
 
 .cta-buttons {
