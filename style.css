@@ -205,6 +205,22 @@ nav {
   transform: translateY(-2px);
 }
 
+.btn-primary.btn-disabled,
+.btn-primary:disabled {
+  justify-content: center;
+  border: 0;
+  background: rgba(204, 112, 42, 0.34);
+  color: rgba(246, 241, 226, 0.56);
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn-primary.btn-disabled:hover,
+.btn-primary:disabled:hover {
+  background: rgba(204, 112, 42, 0.34);
+  transform: none;
+}
+
 .btn-secondary {
   display: inline-flex;
   align-items: center;
