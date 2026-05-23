@@ -497,7 +497,7 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
-  align-items: start;
+  align-items: stretch;
 }
 
 .callout-card {
@@ -505,6 +505,7 @@ nav {
   border: 1px solid var(--rule);
   position: relative;
   background: var(--ink-soft);
+  height: 100%;
 }
 
 .callout-card::before {
